@@ -1,6 +1,8 @@
 #pragma once
 
 #include "ofMain.h"
+#include "ofxFft.h"
+
 
 class ofApp : public ofBaseApp{
 
@@ -38,5 +40,8 @@ class ofApp : public ofBaseApp{
     ofSoundPlayer snd1;
     
     ofSoundPlayer players[6];
+    
+    
+    ofxFft* fft;
   
 };
