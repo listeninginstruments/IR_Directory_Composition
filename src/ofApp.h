@@ -20,5 +20,23 @@ class ofApp : public ofBaseApp{
 		void windowResized(int w, int h);
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
+    
+    
+    // --- | Timer
+       void delayStart(float s);
+         void delayTimer();
+         void delayFire();
+         float delay_time;
+         float count;
+    
+    
+    ofDirectory dir;
+    string audio_path;
+    
+    void changeAudio();
 		
+    ofSoundPlayer snd1;
+    
+    ofSoundPlayer players[6];
+  
 };
